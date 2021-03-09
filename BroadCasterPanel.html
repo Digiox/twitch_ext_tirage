@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/BroadCasterpanel.css">
+    <title>Broadcaster view</title>
+
+</head>
+
+<body>
+    <div id="main_section_selectOptions">
+        <h2>Configurer un tirage</h2>
+        <h4> Choisissez un nombre de spectateurs à tirer au sort</h4>
+        <input id="userNumberInput" value="1" name="number_of_user" type="number" placeholder="5" />
+        </br>
+        <h4>Durée en secondes du tirage</h4>
+        <input id="countDownInput" value="60" name="countdown_time" type="number" placeholder="60" />
+        </br>
+        <input id="button" type="button" value="Commencer le tirage" />
+    </div>
+
+    <div id="main_section_eventRunning">
+        <p>Le tirage est en cours</p>
+        <p>Celui-ci prend fin dans <span id="time">40</span> secondes</p>
+        <!-- <input id="stop" type="button" value="Stopper le tirage" /> -->
+    </div>
+
+    <div id="main_section_eventResults">
+        <p>Le tirage est terminé, voici les résultats</p>
+        <input id="resetButton" type="button" value="Reset" />
+        <div id="user_list_div">
+
+
+        </div>
+        
+    </div>
+    <script src="https://cdn.socket.io/3.1.1/socket.io.min.js" integrity="sha384-gDaozqUvc4HTgo8iZjwth73C6dDDeOJsAgpxBcMpZYztUfjHXpzrpdrHRdVp8ySO" crossorigin="anonymous"></script>
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <script src="./js/BroadCasterPanel"></script>
+</body>
+
+</html>

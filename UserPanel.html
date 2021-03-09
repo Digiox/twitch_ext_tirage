@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/UserPanel.css">
+    <title>User panel</title>
+</head>
+<body>
+    <div id="main_section_waitingForEvent">
+        <h1>Aucun tirage en cours...</h1>
+    </div>
+    <div id="main_section_submitUsername">
+        <h1>Participe au tirage !</h1>
+    <h4>Le tirage se termine dans <span  id="dynamic_countdown_submit">50</span> secondes</h4>
+    <input id="inputElement" type="text" placeholder="Entre ton pseudo ici" />
+ 
+        <input id="submitButton" type="button" value="Envoyer" />
+    
+    </div>
+
+    <div id="main_section_submited">
+        <h1>Votre participation à été reçue</h1>
+
+        <h3>Le tirage se termine dans <span id="dynamic_countdown_submited">50</span></h3>
+
+    </div>
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <script src="./js/UserPanel"></script>
+    
+</body>
+</html>
