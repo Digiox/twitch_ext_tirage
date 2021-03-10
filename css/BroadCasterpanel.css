@@ -1,0 +1,31 @@
+body {
+    background-color: #1f4068;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+input[type=number]{
+    padding: 2px;
+    text-align: center;
+    width: 15%;
+}
+
+input[type=button] {
+    background-color: #01BAEF;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#main_section_eventRunning {
+    display: none;
+}
+
+#main_section_eventResults {
+    display: none;
+}

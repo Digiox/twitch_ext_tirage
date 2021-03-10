@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel ./UserPanel.html ./BroadCasterPanel.html"
+    "start": "parcel ./UserPanel.html ./BroadCasterPanel.html",
+    "services": "node ./services/bridge.js"
+
   },
   "dependencies": {
     "axios": "^0.21.1",
