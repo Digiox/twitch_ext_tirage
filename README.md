@@ -19,7 +19,7 @@ Dans le dossier du projet, exécuter la commande suivante dans un terminal.
 
 ## **Vérifier que l'application démarre correctement**
 
-Dans un premier temps, nous allonrs tester que tout démarre correctemement, pour le moment l'application ne sera pas connecté à twitch et certaines fonctionnalités ne seront pas opérationnelles.
+Dans un premier temps, nous allons tester que tout démarre correctement, pour le moment l'application ne sera pas connectée à Twitch et certaines fonctionnalités ne seront pas opérationnelles.
 
 Exécuter les commandes:
 
@@ -31,7 +31,7 @@ puis, dans une autre console en vous rendant dans le dossier "services":
 
 La première commande démarre le côté front de l'application et la seconde le serveur.
 
-Si les deux commandes fonctionnent, vous devriez pouvoir le voir sur vos consoles et en vous rendant sur l'adresse indiquée dans l'une d'elles, une erreur devrais apparraitre à l'écran.
+Si les deux commandes fonctionnent, vous devriez pouvoir le voir sur vos consoles et en vous rendant sur l'adresse indiquée dans l'une d'elles, une erreur devrait apparaitre à l'écran.
 
 L'adresse qui apparait dans votre console est normalement 
 
@@ -45,6 +45,6 @@ Et pour la page "streamer"
 
 `http://localhost:1234/BroadCasterPanel.html`.
 
-Si les deux pages s'affichent correctement, vous pouvez configurer votre extension avec twitch en suivant la documentation suivante.
+Si les deux pages s'affichent correctement, vous pouvez configurer votre extension avec Twitch en suivant la documentation suivante.
 
 https://dev.twitch.tv/docs/extensions
