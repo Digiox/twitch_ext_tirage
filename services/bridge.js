@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+require('dotenv').config()
 const jwt = require('jsonwebtoken')
 const axios = require('axios')
 const app = require('express')()
@@ -10,8 +11,18 @@ const io = require('socket.io')(http, {
         methods: ["GET", "POST"]
     }
 })
+
+
+//TWITCH KEY
+
+
+const KEY = process.env.TWITCH_KEY
+console.log("test",KEY)
+
+
+
 const port = 5000
-const secret = Buffer.from("6bv++5OxqmF62JrcmBUSK61+4eYY268osxkK3i/n5VM=", "base64")
+const secret = Buffer.from(KEY, "base64")
 app.use(bodyParser.json())
 mongoose.connect("mongodb://localhost:27017/db", { useNewUrlParser: true, useUnifiedTopology: true }).then(res => console.log('connection successful')).catch(err => console.error(err))
 var drawConfig;
